@@ -7,6 +7,7 @@ import NProgress from 'nprogress';
 Router.onRouteChangeStart = () => {
   NProgress.start();
 };
+
 Router.onRouteChangeComplete = () => {
   NProgress.done();
 };
@@ -57,11 +58,9 @@ const Header = () => (
   <StyledHeader>
     <div className="bar ">
       <Logo>
-        <h1>
-          <Link href="/">
-            <a>Sick Fits</a>
-          </Link>
-        </h1>
+        <Link href="/">
+          <a>Sick Fits</a>
+        </Link>
       </Logo>
       <Nav />
     </div>
